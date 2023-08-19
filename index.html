@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="home-button" href="nav">Home</div>
+        <input list="cities" type="search" name="search" id="search" placeholder="Search City">
+        <datalist id="cities" >
+           <option value="pune">Pune</option>
+        </datalist>
+    </nav>
+    <main class="container">
+       
+        <article id="current-forecast">
+          <h1 class="city"> City name</h1>
+          <p class="temp">--</p>
+          <p class="description">Description</p>
+          <p class="min-max-temp">H L</p>
+        </article>
+        <article id="hourly-forecast">
+            <h1>Hourly Forecast</h1>
+            <section class="hourly-container">
+                <article>
+                    <h2 class="time">Now</h2>
+                    <p class="icon"></p>
+                    <p class="hourly-temp">--</p> 
+                  </article>
+            </section>
+            
+        </article>
+        <article id="five-day-forecast">
+            <h1>5 day forecast</h1>
+            <section class="five-day-forecast-container">
+                <article class="day-wise-forecast">
+                    <h2>Today</h2>
+                    <p class="icon">--</p>
+                    <p class="min-temp">--</p>
+                    <p class="max-temp">--</p>
+                </article>
+                <article class="day-wise-forecast">
+                    <h2>Today</h2>
+                    <p class="icon">--</p>
+                    <p class="min-temp">--</p>
+                    <p class="max-temp">--</p>
+                </article>
+            </section>
+            
+        </article>
+        <article id="feelslike">
+            <h1>Feel like</h1>
+            <p class="feelslike-temp">--</p>
+        </article>
+        <article id="humidity">
+            <h1>Humidity</h1>
+            <p class="humidity-value">--</p>
+        </article>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
